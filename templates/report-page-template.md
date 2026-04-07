@@ -1,6 +1,6 @@
 # Report Page Template
 
-이 문서는 집계 페이지를 만들 때 바로 따라 넣는 설정값 모음이다.
+이 문서는 한글 UI 기준으로 집계 페이지를 만들 때 바로 따라 넣는 설정값 모음이다.
 
 ## 1. 루트 페이지 전체 현황
 
@@ -12,17 +12,18 @@ Agent 개발현황
 
 매크로:
 
-- `Content Properties Report`
+- `페이지 속성 보고서`
+- 영문 매크로명: `Content Properties Report` 또는 `Page Properties Report`
 
 설정값:
 
-| 항목 | 값 |
+| 한글 UI 항목명 | 입력값 |
 | --- | --- |
-| Labels | `agent-task` |
-| With ancestor | `Agent 개발현황` |
-| Columns to show | `사업부, 구분, 과제명, 상태, 담당, 우선순위, 완료예정일` |
-| Title column heading | `과제 페이지` |
-| Sort by | `사업부` |
+| 레이블 | `agent-task` |
+| 상위 페이지 | `Agent 개발현황` |
+| 표시할 열 | `사업부, 구분, 과제명, 상태, 담당, 우선순위, 완료예정일` |
+| 제목 열 이름 | `과제 페이지` |
+| 정렬 기준 | `사업부` |
 
 ## 2. 사업부별 현황
 
@@ -34,13 +35,13 @@ VD 개발과제 현황
 
 설정값:
 
-| 항목 | 값 |
+| 한글 UI 항목명 | 입력값 |
 | --- | --- |
-| Labels | `agent-task` |
-| With ancestor | `VD` 페이지 |
-| Columns to show | `구분, 과제명, 상태, 담당, 완료예정일` |
-| Title column heading | `과제 페이지` |
-| Sort by | `구분` |
+| 레이블 | `agent-task` |
+| 상위 페이지 | `VD` 페이지 |
+| 표시할 열 | `구분, 과제명, 상태, 담당, 완료예정일` |
+| 제목 열 이름 | `과제 페이지` |
+| 정렬 기준 | `구분` |
 
 ## 3. 구분별 현황
 
@@ -52,12 +53,12 @@ VD 개발과제 현황
 
 설정값:
 
-| 항목 | 값 |
+| 한글 UI 항목명 | 입력값 |
 | --- | --- |
-| Labels | Label 필터 2개 사용: `agent-task`, `talent-acquisition` |
-| Columns to show | `사업부, 과제명, 상태, 담당, 완료예정일` |
-| Title column heading | `과제 페이지` |
-| Sort by | `사업부` |
+| 레이블 | 레이블 필터 2개 사용: `agent-task`, `talent-acquisition` |
+| 표시할 열 | `사업부, 과제명, 상태, 담당, 완료예정일` |
+| 제목 열 이름 | `과제 페이지` |
+| 정렬 기준 | `사업부` |
 
 ## 4. 사업부 + 구분 조합 현황
 
@@ -69,12 +70,12 @@ VD 채용 과제 현황
 
 설정값:
 
-| 항목 | 값 |
+| 한글 UI 항목명 | 입력값 |
 | --- | --- |
-| Labels | Label 필터 2개 사용: `agent-task`, `talent-acquisition` |
-| With ancestor | `VD` 페이지 |
-| Columns to show | `과제명, 상태, 담당, 완료예정일` |
-| Sort by | `완료예정일` |
+| 레이블 | 레이블 필터 2개 사용: `agent-task`, `talent-acquisition` |
+| 상위 페이지 | `VD` 페이지 |
+| 표시할 열 | `과제명, 상태, 담당, 완료예정일` |
+| 정렬 기준 | `완료예정일` |
 
 ## 5. 추천 집계 페이지 묶음
 
