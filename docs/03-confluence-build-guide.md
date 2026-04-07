@@ -14,12 +14,16 @@
    - `agent-task`
    - 해당 사업부 label 1개
    - 해당 구분 label 1개
-4. 본문 상단에 `Content Properties` 매크로를 넣는다.
+4. 본문 상단에 속성 매크로를 넣는다.
+   - Confluence Cloud: `Content Properties`
+   - Data Center / 구버전: `Page Properties`
 5. 매크로 안에 2열 테이블을 만들고 `templates/agent-task-page-template.md` 내용대로 채운다.
 
 ## 3. 루트 페이지에 전체 집계 표 만들기
 
-1. 루트 페이지 `Agent 개발현황` 본문 상단 또는 중간에 `Content Properties Report` 매크로를 넣는다.
+1. 루트 페이지 `Agent 개발현황` 본문 상단 또는 중간에 리포트 매크로를 넣는다.
+   - Confluence Cloud: `Content Properties Report`
+   - Data Center / 구버전: `Page Properties Report`
 2. 아래처럼 설정한다.
 
 | 항목 | 값 |

@@ -110,3 +110,9 @@ Agent 개발현황
 - 모든 과제 페이지에 `agent-task`를 붙인다.
 - 사업부 라벨은 영문 소문자 식별자 1개를 붙인다. 예: `vd`, `mx`, `gtr`
 - 구분 라벨은 영문 소문자 식별자 1개를 붙인다. 예: `workforce`, `talent-acquisition`
+
+## 매크로 이름이 다르게 보일 때
+
+- Confluence Cloud 기준 문서에서는 `Content Properties`, `Content Properties Report`를 사용했다.
+- Data Center나 구버전 문서에서는 같은 개념이 `Page Properties`, `Page Properties Report`로 보일 수 있다.
+- 한글 UI에서도 매크로 검색은 영어 이름으로 찾는 편이 빠르다.

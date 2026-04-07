@@ -59,7 +59,14 @@ talent-acquisition
 
 ## 5. Content Properties 넣는다
 
-페이지 본문 맨 위에 `Content Properties` 매크로를 삽입하고, 그 안에 아래 2열 표를 넣는다.
+여기서 말하는 것은 Confluence의 속성 매크로다.
+
+- Confluence Cloud: `Content Properties`
+- Data Center / 구버전 / 일부 레거시 편집기: `Page Properties`
+
+한글 UI에서도 매크로 검색창에는 영어 이름으로 보이는 경우가 많다. 안 보이면 `/content properties` 또는 `/page properties`로 검색하면 된다.
+
+페이지 본문 맨 위에 해당 매크로를 삽입하고, 그 안에 아래 2열 표를 넣는다.
 
 | 항목 | 값 |
 | --- | --- |
@@ -75,7 +82,12 @@ talent-acquisition
 
 ### 6. 루트 페이지에 집계 표 넣는다
 
-루트 페이지 `Agent 개발현황` 본문에서 `Content Properties Report` 매크로를 삽입하고 아래처럼 설정한다.
+루트 페이지 `Agent 개발현황` 본문에서 아래 리포트 매크로를 삽입하고 설정한다.
+
+- Confluence Cloud: `Content Properties Report`
+- Data Center / 구버전 / 일부 레거시 편집기: `Page Properties Report`
+
+매크로 검색창에서 안 보이면 `/content properties report` 또는 `/page properties report`로 검색하면 된다.
 
 | 항목 | 값 |
 | --- | --- |
