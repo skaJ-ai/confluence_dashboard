@@ -1,13 +1,13 @@
 # Confluence Dashboard Starter
 
-사내망 Confluence에서 `Agent 개발과제`를 기본 기능만으로 자동 집계하기 위한 시작 저장소다.
+사내망 Confluence에서 `Agent 개발현황` 첫 페이지에 개발과제 현황이 바로 보이도록 기본 기능만으로 구성하기 위한 시작 저장소다.
 
 이 저장소는 다음 상황을 기준으로 작성했다.
 
 - 사업부별 상위 페이지를 두고
 - 그 아래에 개발과제 페이지를 자식으로 만들고
 - 각 개발과제 페이지에 `Content Properties`와 `label`을 넣고
-- 집계 페이지에서 `Content Properties Report`로 자동 수집한다
+- 첫 페이지에서 `Content Properties Report`로 자동 수집한다
 
 Confluence Cloud 기준으로 작성했지만, Data Center에서도 `Page Properties / Page Properties Report` 이름만 다르고 구조는 거의 같다.
 
@@ -18,8 +18,21 @@ Confluence Cloud 기준으로 작성했지만, Data Center에서도 `Page Proper
 - 개발과제 페이지 템플릿을 복붙해서 바로 만들 수 있다
 - 마스터 테이블, 사업부별 테이블, 구분별 테이블 설정값을 바로 따라할 수 있다
 
+## 어디서부터 보면 되는지
+
+처음이면 아래 순서로 보면 된다.
+
+1. [docs/00-start-here.md](./docs/00-start-here.md)
+2. [docs/01-space-structure.md](./docs/01-space-structure.md)
+3. [docs/02-label-and-property-rules.md](./docs/02-label-and-property-rules.md)
+4. [templates/agent-task-page-template.md](./templates/agent-task-page-template.md)
+5. [templates/report-page-template.md](./templates/report-page-template.md)
+
+바쁘면 `docs/00-start-here.md`만 먼저 보고 그대로 따라 만들면 된다.
+
 ## 폴더 구성
 
+- `docs/00-start-here.md`: 제일 먼저 보면 되는 빠른 시작 가이드
 - `docs/01-space-structure.md`: 페이지 트리 구조안
 - `docs/02-label-and-property-rules.md`: label / 속성 규칙
 - `docs/03-confluence-build-guide.md`: 실제 구축 순서
@@ -28,10 +41,11 @@ Confluence Cloud 기준으로 작성했지만, Data Center에서도 `Page Proper
 
 ## 가장 먼저 할 일
 
-1. `docs/01-space-structure.md`를 보고 Space 구조를 만든다.
-2. `docs/02-label-and-property-rules.md`의 label 체계를 확정한다.
-3. 각 개발과제 페이지를 `templates/agent-task-page-template.md`로 생성한다.
-4. 집계 페이지를 만들고 `templates/report-page-template.md`대로 `Content Properties Report`를 설정한다.
+1. `docs/00-start-here.md`를 보고 전체 흐름을 잡는다.
+2. `docs/01-space-structure.md`를 보고 Space 구조를 만든다.
+3. `docs/02-label-and-property-rules.md`의 label 체계를 그대로 적용한다.
+4. 각 개발과제 페이지를 `templates/agent-task-page-template.md`로 생성한다.
+5. 첫 페이지에 `templates/report-page-template.md`대로 `Content Properties Report`를 설정한다.
 
 ## 권장 운영 원칙
 
@@ -45,7 +59,7 @@ Confluence Cloud 기준으로 작성했지만, Data Center에서도 `Page Proper
 페이지 트리 예시:
 
 ```text
-Agent 개발과제
+Agent 개발현황
 ├─ AX&CI Lab
 │  ├─ [인력운영] 인터뷰 코파일럿
 │  └─ [채용] JD 초안 생성 에이전트
@@ -59,8 +73,8 @@ Agent 개발과제
 라벨 예시:
 
 - `agent-task`
-- `bu-vd`
-- `cat-recruiting`
+- `vd`
+- `talent-acquisition`
 
 속성 예시:
 
@@ -78,7 +92,7 @@ Agent 개발과제
 
 ## 추천 시작 구조
 
-- 루트 페이지: `Agent 개발과제`
+- 루트 페이지: `Agent 개발현황`
 - 사업부 페이지: `AX&CI Lab`, `VD`, `DA`, `MX`, `NW`, `의료기기`, `SR`, `CDO`, `생기연`
 - 공통 구분:
   - 인력운영
@@ -91,3 +105,8 @@ Agent 개발과제
   - 집단지성
   - 보상/근태
 
+## 라벨 규칙 한 줄 요약
+
+- 모든 과제 페이지에 `agent-task`를 붙인다.
+- 사업부 라벨은 영문 소문자 식별자 1개를 붙인다. 예: `vd`, `mx`, `gtr`
+- 구분 라벨은 영문 소문자 식별자 1개를 붙인다. 예: `workforce`, `talent-acquisition`

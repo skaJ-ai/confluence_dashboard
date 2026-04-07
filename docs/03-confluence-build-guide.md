@@ -3,7 +3,7 @@
 ## 1. Space 준비
 
 1. 전용 Space를 하나 만든다.
-2. 루트 페이지 `Agent 개발과제`를 만든다.
+2. 루트 페이지 `Agent 개발현황`을 만든다.
 3. 그 아래에 사업부 상위 페이지를 만든다.
 
 ## 2. 개발과제 페이지 만들기
@@ -17,20 +17,20 @@
 4. 본문 상단에 `Content Properties` 매크로를 넣는다.
 5. 매크로 안에 2열 테이블을 만들고 `templates/agent-task-page-template.md` 내용대로 채운다.
 
-## 3. 전체 집계 페이지 만들기
+## 3. 루트 페이지에 전체 집계 표 만들기
 
-1. `00. 집계 현황` 아래에 `전체 개발과제 현황` 페이지를 만든다.
-2. 페이지에 `Content Properties Report` 매크로를 넣는다.
-3. 아래처럼 설정한다.
+1. 루트 페이지 `Agent 개발현황` 본문 상단 또는 중간에 `Content Properties Report` 매크로를 넣는다.
+2. 아래처럼 설정한다.
 
 | 항목 | 값 |
 | --- | --- |
 | Labels | `agent-task` |
+| With ancestor | `Agent 개발현황` |
 | Columns to show | `사업부, 구분, 과제명, 상태, 담당, 우선순위, 완료예정일` |
 | Sort by | `사업부` 또는 `완료예정일` |
 | Title column heading | `과제 페이지` |
 
-이렇게 하면 모든 개발과제 페이지가 한 표에 자동 집계된다.
+이렇게 하면 루트 첫 페이지에서 모든 개발과제 페이지가 한 표에 자동 집계된다.
 
 ## 4. 사업부별 집계 페이지 만들기
 
@@ -49,6 +49,8 @@
 
 중간에 하위 분류 페이지가 생겨도 `With ancestor`면 같이 잡힌다.
 
+꼭 별도 페이지를 만들 필요는 없다. 루트 페이지 `Agent 개발현황` 아래에 섹션을 나눠 여러 리포트 매크로를 한 페이지에 같이 둘 수도 있다.
+
 ## 5. 구분별 집계 페이지 만들기
 
 예: `채용 과제 현황`
@@ -59,14 +61,14 @@
 
 | 항목 | 값 |
 | --- | --- |
-| Labels | `agent-task` 와 `cat-recruiting` |
+| Labels | `agent-task` 와 `talent-acquisition` |
 | Columns to show | `사업부, 과제명, 상태, 담당, 완료예정일` |
 | Sort by | `사업부` |
 
 중요:
 
 - OR가 아니라 AND로 잡으려면 Label 필터를 두 번 추가해서 각각 하나씩 넣는다.
-- 예를 들어 `agent-task`와 `cat-recruiting`을 모두 만족시키려면 Label 필터 2개를 사용한다.
+- 예를 들어 `agent-task`와 `talent-acquisition`을 모두 만족시키려면 Label 필터 2개를 사용한다.
 
 ## 6. 권장 운영 방식
 
@@ -84,4 +86,3 @@
 3. 각 셀에 조건별 `Content Properties Report`를 넣는다.
 
 다만 매크로 수가 많아져서 운영성이 떨어지므로 1차 버전에서는 권장하지 않는다.
-

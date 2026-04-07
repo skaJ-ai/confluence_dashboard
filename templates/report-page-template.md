@@ -2,12 +2,12 @@
 
 이 문서는 집계 페이지를 만들 때 바로 따라 넣는 설정값 모음이다.
 
-## 1. 전체 개발과제 현황
+## 1. 루트 페이지 전체 현황
 
 페이지명 예:
 
 ```text
-전체 개발과제 현황
+Agent 개발현황
 ```
 
 매크로:
@@ -19,6 +19,7 @@
 | 항목 | 값 |
 | --- | --- |
 | Labels | `agent-task` |
+| With ancestor | `Agent 개발현황` |
 | Columns to show | `사업부, 구분, 과제명, 상태, 담당, 우선순위, 완료예정일` |
 | Title column heading | `과제 페이지` |
 | Sort by | `사업부` |
@@ -53,7 +54,7 @@ VD 개발과제 현황
 
 | 항목 | 값 |
 | --- | --- |
-| Labels | Label 필터 2개 사용: `agent-task`, `cat-recruiting` |
+| Labels | Label 필터 2개 사용: `agent-task`, `talent-acquisition` |
 | Columns to show | `사업부, 과제명, 상태, 담당, 완료예정일` |
 | Title column heading | `과제 페이지` |
 | Sort by | `사업부` |
@@ -70,7 +71,7 @@ VD 채용 과제 현황
 
 | 항목 | 값 |
 | --- | --- |
-| Labels | Label 필터 2개 사용: `agent-task`, `cat-recruiting` |
+| Labels | Label 필터 2개 사용: `agent-task`, `talent-acquisition` |
 | With ancestor | `VD` 페이지 |
 | Columns to show | `과제명, 상태, 담당, 완료예정일` |
 | Sort by | `완료예정일` |

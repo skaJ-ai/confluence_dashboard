@@ -20,8 +20,8 @@
 
 ```text
 agent-task
-bu-vd
-cat-recruiting
+vd
+talent-acquisition
 ```
 
 ## 3. Content Properties 안에 넣을 표
@@ -73,4 +73,3 @@ cat-recruiting
 - 기존 JD 모음
 - 직무기술서 작성 가이드
 ```
-

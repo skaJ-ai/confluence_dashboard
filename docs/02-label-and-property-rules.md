@@ -19,36 +19,36 @@
 예시:
 
 - `agent-task`
-- `bu-vd`
-- `cat-recruiting`
+- `vd`
+- `talent-acquisition`
 
 ## 사업부 label 규칙
 
 | 표시명 | label |
 | --- | --- |
-| AX&CI Lab | `bu-ax-ci-lab` |
-| VD | `bu-vd` |
-| DA | `bu-da` |
-| MX | `bu-mx` |
-| NW | `bu-nw` |
-| 의료기기 | `bu-medical-device` |
-| SR | `bu-sr` |
-| CDO | `bu-cdo` |
-| 생기연 | `bu-bio-research` |
+| AX&CI Lab | `ax-ci-lab` |
+| VD | `vd` |
+| DA | `da` |
+| MX | `mx` |
+| NW | `nw` |
+| 의료기기 | `medical-device` |
+| SR | `sr` |
+| CDO | `cdo` |
+| 생기연 | `gtr` |
 
 ## 구분 label 규칙
 
 | 표시명 | label |
 | --- | --- |
-| 인력운영 | `cat-workforce` |
-| 제도 | `cat-policy` |
-| 임원조직 | `cat-executive-org` |
-| 노사 | `cat-labor` |
-| 조직문화 | `cat-culture` |
-| 채용 | `cat-recruiting` |
-| 총무 | `cat-general-affairs` |
-| 집단지성 | `cat-collective-intelligence` |
-| 보상/근태 | `cat-reward-attendance` |
+| 인력운영 | `workforce` |
+| 제도 | `policy` |
+| 임원조직 | `executive-org` |
+| 노사 | `labor` |
+| 조직문화 | `culture` |
+| 채용 | `talent-acquisition` |
+| 총무 | `general-affairs` |
+| 집단지성 | `collective-intelligence` |
+| 보상/근태 | `reward-attendance` |
 
 ## 권장 속성 컬럼
 
@@ -70,7 +70,7 @@
 
 - label은 필터용이라 빠르고 안정적이다.
 - 속성값은 리포트 표에 사람이 읽기 좋게 노출된다.
-- `사업부=VD` 같은 값은 속성에도 넣고 label도 `bu-vd`로 넣는 편이 좋다.
+- `사업부=VD` 같은 값은 속성에도 넣고 label도 `vd`로 넣는 편이 좋다.
 
 ## 피해야 할 것
 
@@ -80,3 +80,8 @@
 
 컬럼명은 반드시 통일해야 리포트에서 같은 열로 묶인다.
 
+## 지금 바로 써야 하는 대표 라벨
+
+- 공통: `agent-task`
+- 생기연: `gtr`
+- 채용: `talent-acquisition`
