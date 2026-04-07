@@ -1,0 +1,82 @@
+# Label And Property Rules
+
+## 기본 원칙
+
+- `페이지 트리`: 사업부 소속 표현
+- `label`: 검색 / 필터 / 자동 집계
+- `Content Properties`: 표에 표시할 값
+
+셋을 역할 분리해서 써야 운영이 깔끔하다.
+
+## 필수 label
+
+모든 개발과제 페이지에는 아래 label을 붙인다.
+
+- `agent-task`
+- 사업부 label 1개
+- 구분 label 1개
+
+예시:
+
+- `agent-task`
+- `bu-vd`
+- `cat-recruiting`
+
+## 사업부 label 규칙
+
+| 표시명 | label |
+| --- | --- |
+| AX&CI Lab | `bu-ax-ci-lab` |
+| VD | `bu-vd` |
+| DA | `bu-da` |
+| MX | `bu-mx` |
+| NW | `bu-nw` |
+| 의료기기 | `bu-medical-device` |
+| SR | `bu-sr` |
+| CDO | `bu-cdo` |
+| 생기연 | `bu-bio-research` |
+
+## 구분 label 규칙
+
+| 표시명 | label |
+| --- | --- |
+| 인력운영 | `cat-workforce` |
+| 제도 | `cat-policy` |
+| 임원조직 | `cat-executive-org` |
+| 노사 | `cat-labor` |
+| 조직문화 | `cat-culture` |
+| 채용 | `cat-recruiting` |
+| 총무 | `cat-general-affairs` |
+| 집단지성 | `cat-collective-intelligence` |
+| 보상/근태 | `cat-reward-attendance` |
+
+## 권장 속성 컬럼
+
+`Content Properties` 표 안에는 아래 컬럼을 권장한다.
+
+| 컬럼 | 설명 |
+| --- | --- |
+| 사업부 | 표시용 사업부명 |
+| 구분 | 표시용 구분명 |
+| 과제명 | 과제의 정식 이름 |
+| 목적 | 해결하려는 문제 |
+| 담당 | 실무 담당자 |
+| 상태 | 아이디어 / 검토중 / 진행중 / 완료 / 보류 |
+| 우선순위 | High / Medium / Low |
+| 완료예정일 | 목표 날짜 |
+| 관련 링크 | Jira, Drive, Figma 등 |
+
+## label과 속성값을 둘 다 쓰는 이유
+
+- label은 필터용이라 빠르고 안정적이다.
+- 속성값은 리포트 표에 사람이 읽기 좋게 노출된다.
+- `사업부=VD` 같은 값은 속성에도 넣고 label도 `bu-vd`로 넣는 편이 좋다.
+
+## 피해야 할 것
+
+- label에 한글과 공백을 섞어 난잡하게 쓰는 것
+- 페이지 제목 규칙 없이 자유롭게 쓰는 것
+- 속성 컬럼명을 페이지마다 다르게 쓰는 것
+
+컬럼명은 반드시 통일해야 리포트에서 같은 열로 묶인다.
+
